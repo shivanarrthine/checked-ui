@@ -1,0 +1,105 @@
+
+
+// .form{
+//   display: inline-grid;
+//   grid-template-columns: min-content min-content min-content;
+//   // grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+//   grid-gap: 8px;
+// }
+
+
+.page{
+  display: grid;
+  grid-template-columns: 20% auto;
+  height: 100vh;
+}
+
+.sidebar{
+  background: $black;
+  color: $white;
+  padding: 1rem;
+}
+
+.content{
+  padding: 2rem 10rem;
+  overflow-y: auto;
+}
+
+
+
+.bubble-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-auto-rows: 100px;
+  grid-gap: 0.25rem;
+  grid-auto-flow: dense;
+
+  &--auto .bubble{
+
+    &:nth-child(3n){
+      grid-column-start: span 3;
+      grid-row-start: span 3;
+    }
+
+    &:nth-child(2n){
+      grid-column-start: span 2;
+      grid-row-start: span 2;
+    }
+    
+  }
+}
+
+@media all and (max-width: 800px){
+
+  .page{
+    height: auto;
+    grid-template-columns: auto;
+  }
+
+  .content{
+    padding: 2rem;
+  }
+
+
+  .bubble-grid{
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 20px);
+    grid-auto-rows: 20px;
+    grid-gap: 0;
+
+    &--auto .bubble{
+      grid-column-start: span 5;
+      grid-row-start: span 5;
+
+      &:nth-child(3n), &.bubble--lg{
+        grid-column-start: span 10;
+        grid-row-start: span 10;
+      }
+
+      &:nth-child(2n), &.bubble-md{
+        grid-column-start: span 7;
+        grid-row-start: span 7;
+      }
+
+      &:nth-child(5n), &.bubble-md{
+        grid-column-start: span 4;
+        grid-row-start: span 4;
+      }
+      
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

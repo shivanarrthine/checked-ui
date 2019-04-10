@@ -1,0 +1,150 @@
+
+// default checkbox properties
+.checkbox{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 0.5rem 0.5rem 0;
+
+  input[type=checkbox]{
+    position: absolute;
+    opacity: 0;
+
+    & + label{
+      position: relative;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    & + label:before{
+      content: none;
+    }
+
+    &:checked + label:after{
+      content: none;
+    }
+  }
+
+}
+
+// classic checkbox
+.checkbox--classic{
+  margin-bottom: 1rem;
+
+  input[type="checkbox"]{
+
+    & + label{
+      display: inline-flex;
+      align-items: center;
+    }
+
+    & + label:before{
+      content: '';
+      display: inline-flex;
+      margin-right: 0.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 1px solid $border-color;
+      transition: 0.3s all ease;
+    }
+
+    // checkbox hover
+    &:hover + label:before{
+      background: $very-light-gray;
+      border-color: $very-light-gray;
+    }
+
+    // checkbox focus
+    &:focus + label:before{
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+
+    // checkbox selected
+    &:checked + label:before{
+      background: $primary;
+      border-color: $primary;
+    }
+
+    // checkmark
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 0.5rem;
+      top: 50%;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow: 
+        2px 0 0 white,
+        4px 0 0 white,
+        4px -2px 0 white,
+        4px -4px 0 white,
+        4px -6px 0 white,
+        4px -8px 0 white;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+// boxed checkbox
+.checkbox--box, .checkbox--circle{
+  display: inline-flex;
+  margin-right: 0.5rem;
+
+  input[type="checkbox"]{
+
+    & + label{
+      display: block;
+      border: 1px solid $border-color;
+      border-radius: 0.25rem;
+      padding: 0.5rem 1rem;
+      color: $input-color; 
+      min-width: 4rem;
+      text-align: center;
+    }
+
+    // checkbox hover
+    &:hover + label{
+      background: $very-light-gray;
+      border-color: $very-light-gray;
+    }
+
+    // checkbox focus
+    &:focus + label{
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+    }
+
+    // checkbox selected
+    &:checked + label{
+      background: $primary;
+      border-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+
+// circle checkbox
+.checkbox--circle{
+
+  input[type="checkbox"]{
+
+    & + label{
+      display: flex;
+      border-radius: 100%;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+      width: 3rem;
+      height: 3rem;
+      padding: 0;
+      transition: 0.5s all ease;
+    }
+
+    &:checked + label{
+      transform: scale(1.1);
+    }
+  }
+}
+
+

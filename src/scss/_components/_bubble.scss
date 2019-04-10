@@ -1,0 +1,60 @@
+
+// $bubbles-count: 5;
+$colors: $blue, $red, $yellow;
+
+.bubble{
+  position: relative;
+  display: flex;
+
+  &.bubble--lg{
+    grid-column-start: span 3;
+    grid-row-start: span 3;
+  }
+
+  &.bubble-md{
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+  }
+
+  input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+
+    & + label{
+      position: relative;
+      cursor: pointer;
+      font-weight: 500;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      color: $white;
+      opacity: 0.8;
+      transform: scale(0.95);
+      transition: 0.5s all ease;
+      text-align: center;
+    }
+
+
+    &:checked + label{
+      border-width: 2px;   
+      transform: scale(1);
+      opacity: 1;
+      box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.24);
+    }
+
+  }
+}
+
+// randomize colors
+@for $i from 1 through length($colors){
+  .bubble:nth-child(#{length($colors)}n+#{$i}){
+    label{
+      background: nth($colors, $i);
+      border: 1px solid nth($colors, $i);
+    }
+  }
+}

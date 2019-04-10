@@ -1,0 +1,13 @@
+.checkbox {
+  position: relative;
+  display: block; }
+  .checkbox input[type="checkbox"] {
+    position: absolute; }
+    .checkbox input[type="checkbox"] + label {
+      position: relative;
+      cursor: pointer; }
+    .checkbox input[type="checkbox"] + label:before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: #ddd; }
