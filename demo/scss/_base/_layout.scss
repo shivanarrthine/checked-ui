@@ -1,0 +1,68 @@
+
+.container{
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1080px;
+}
+
+.example{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin-bottom: 10rem;
+
+  &__desc{
+    // grid-row: span 2;
+    padding-right: 5rem;
+  }
+
+  &__code{
+    grid-column-start: 2;
+    grid-column-end: -1;
+    background: $very-light-gray;
+    border-radius: 0.25rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+
+    p{
+      font-family: "Roboto Mono", monospace;
+      margin:0;
+    }
+
+    span.indent{
+      margin-left: 1rem;
+    }
+  }
+}
+
+
+
+
+
+
+@media all and (max-width: 800px){
+
+  .page{
+    height: auto;
+    grid-template-columns: auto;
+  }
+
+  .content{
+    padding: 2rem;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

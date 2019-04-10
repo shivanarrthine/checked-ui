@@ -1,0 +1,35 @@
+
+// tiles style
+.checked--tiles{
+  display: inline-flex;
+  margin: 0 0.5rem 0.5rem 0;
+
+  input[type=checkbox], input[type=radio]{
+
+    & + label{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $border-color;
+      border-radius: 0.25rem;
+      color: $input-color; 
+      width: 6rem;
+      height: 7rem;
+      transition: all 0.5s ease;
+    }
+
+    &:checked + label{
+      background: $primary;
+      border-color: $primary;
+      color: $white;
+    }
+
+    &:focus + label, &:hover + label{
+      border-color: $primary;
+    }
+
+    &:not(:checked) + label{
+      transform: scale(0.9);
+    }
+  } 
+}

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=OpenSans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700");
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 0; }
+
+h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
+
+h3 {
+  font-weight: 600;
+  font-size: 1.25rem; }
+
+h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem; }
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem; }
+
+span.code {
+  font-family: "Roboto Mono", monospace;
+  color: #108E87; }
+
+a {
+  color: #0D0C35;
+  font-weight: 600;
+  cursor: pointer; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0; }
+
+body {
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #111; }
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1080px; }
+
+.example {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin-bottom: 10rem; }
+  .example__desc {
+    padding-right: 5rem; }
+  .example__code {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    background: #eee;
+    border-radius: 0.25rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem; }
+    .example__code p {
+      font-family: "Roboto Mono", monospace;
+      margin: 0; }
+    .example__code span.indent {
+      margin-left: 1rem; }
+
+@media all and (max-width: 800px) {
+  .page {
+    height: auto;
+    grid-template-columns: auto; }
+  .content {
+    padding: 2rem; } }
+
+header {
+  background-image: url("../images/background.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 50%;
+  height: 35rem;
+  display: flex;
+  align-items: center; }
+  header .container {
+    margin-bottom: 10rem; }
+  header .logo {
+    margin-bottom: 1rem; }
+  header h4 {
+    width: 40%;
+    margin-bottom: 2.5rem; }
+
+.button {
+  display: inline-block;
+  border: 2px solid #0D0C35;
+  color: #111;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  margin: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-radius: 2rem; }
+  .button:hover {
+    transform: scale(1.05); }
+  .button--primary {
+    background: #0D0C35;
+    color: #fff; }

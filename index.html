@@ -2,46 +2,351 @@
 <html>
 <head>
   
-  <title>forms.</title>
+  <title>checked. - A CSS forms library</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- <link rel="stylesheet" href="public/css/reset.css" /> -->
-  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="demo/css/reset.css" />
+  <link rel="stylesheet" href="demo/css/styles.css" />
+  <link rel="stylesheet" href="src/css/checked.min.css" />
 
   <link rel="apple-touch-icon-precomposed" href="public/images/favicon_152.png">
   <link rel="icon" href="public/images/favicon.png" sizes="32x32">
 
-  <link rel="stylesheet" href="public/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
 
 </head>
 <body>
 
-  <div class="page">
+  <header>
+      <div class="container">
+        <img class="logo" src="demo/images/logo.svg" />
+        <h4>A collection of styles for checkbox and radio inputs made purely with CSS.</h4>
 
-    <div class="sidebar">
-      <h1>forms.</h1>
-      <p>A forms library.</p>
+        <a class="button button--primary">Download</a>
+        <a class="button">How to use?</a>
+      </div>
+  </header>
+
+
+  <div class="container">
+
+
+    <!-- Example: Classic checkbox -->
+    <div class="example">
+
+      <div class="example__desc">
+        <h2>Classic</h2>
+        <p>To get the classic checkbox look, add <span class="code">checked--classic</span> to the outer div.</p>
+
+        <a data-toggle=""><i class="fa fa-code"></i> View example code</a>
+      </div>
+
+      <div class="example__checkbox">
+
+        <h4>Select multiple options</h4>
+        <div class="checked--classic">
+          <input name="q1" id="q1-1" type="checkbox" value="1" checked>
+          <label for="q1-1">Ice cream</label>
+        </div>
+
+        <div class="checked--classic">
+          <input name="q1" id="q1-2" type="checkbox" value="2">
+          <label for="q1-2">Cake</label>
+        </div>
+        <div class="checked--classic">
+          <input name="q1" id="q1-3" type="checkbox" value="3">
+          <label for="q1-3">Chocolate</label>
+        </div>
+
+      </div>
+
+      <div class="example__radio">
+
+        <h4>Select a single option</h4>
+        <div class="checked--classic">
+          <input name="q2" id="q2-1" type="radio" value="1" >
+          <label for="q2-1">Tea</label>
+        </div>
+
+        <div class="checked--classic">
+          <input name="q2" id="q2-2" type="radio" value="2" checked>
+          <label for="q2-2">Coffee</label>
+        </div>
+
+      </div>
+
+      <div class="example__code">
+        <p>&lt;div class=“<span class="code">checked--boxes</span>”&gt;<br />
+          <span class="indent">&lt;input name="desserts" id="dessert1" type=“<span class="code">checkbox</span>” value=“yes”&gt;</span><br />
+          <span class="indent">&lt;label for="dessert1"&gt;Ice Cream&lt;/label&gt;</span><br />
+          &lt;/div&gt;
+        </p>
+      </div>
     </div>
 
-    <div class="content">
+    <!-- Example: Boxed checkbox -->
+    <div class="example">
 
-      <h3>Classic checkbox</h3>
+      <div class="example__desc">
+        <h2>Boxes</h2>
+        <p>Line options up as inline boxes using <span class="code">checked--boxes</span>.</p>
 
-      <form class="form">
-        <div class="checkbox checkbox--classic">
-          <input id="classic-1" type="checkbox" value="1">
-          <label for="classic-1">Option 1</label>
+        <a data-toggle=""><i class="fa fa-code"></i> View example code</a>
+      </div>
+
+      <div class="example__checkbox">
+
+        <h4>Select multiple options</h4>
+        <div class="checked--boxes">
+          <input name="q3" id="q3-1" type="checkbox" value="1" checked>
+          <label for="q3-1">Ice cream</label>
         </div>
 
-        <div class="checkbox checkbox--classic">
-          <input id="classic-2" type="checkbox" value="1">
-          <label for="classic-2">Option 2</label>
+        <div class="checked--boxes">
+          <input name="q3" id="q3-2" type="checkbox" value="2">
+          <label for="q3-2">Cake</label>
         </div>
-      </form>
+        <div class="checked--boxes">
+          <input name="q3" id="q3-3" type="checkbox" value="3">
+          <label for="q3-3">Chocolate</label>
+        </div>
 
-      <hr />
+      </div>
+
+      <div class="example__radio">
+
+        <h4>This is awesome?</h4>
+        <div class="checked--boxes">
+          <input name="q4" id="q4-1" type="radio" value="1" checked>
+          <label for="q4-1">Yes!</label>
+        </div>
+
+        <div class="checked--boxes">
+          <input name="q4" id="q4-2" type="radio" value="2">
+          <label for="q4-2">No</label>
+        </div>
+
+      </div>
+
+      <div class="example__code">
+        <p>&lt;div class=“<span class="code">checked--boxes</span>”&gt;<br />
+          <span class="indent">&lt;input name="awesome" id="awesomeY" type=“<span class="code">radio</span>” value=“yes”&gt;</span><br />
+          <span class="indent">&lt;label for="awesomeY"&gt;Yes!&lt;/label&gt;</span><br />
+          &lt;/div&gt;
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Example: Circles -->
+    <div class="example">
+
+      <div class="example__desc">
+        <h2>Circles</h2>
+        <p>Line options up as inline boxes using <span class="code">checked--circle</span>.</p>
+
+        <a data-toggle=""><i class="fa fa-code"></i> View example code</a>
+      </div>
+
+      <div class="example__checkbox">
+
+        <h4>Select multiple options</h4>
+        <div class="checked--circle">
+          <input name="q5" id="q5-1" type="checkbox" value="1">
+          <label for="q5-1">1</label>
+        </div>
+
+        <div class="checked--circle">
+          <input name="q5" id="q5-2" type="checkbox" value="2" checked>
+          <label for="q5-2">2</label>
+        </div>
+        <div class="checked--circle">
+          <input name="q5" id="q5-3" type="checkbox" value="3">
+          <label for="q5-3">3</label>
+        </div>
+        <div class="checked--circle">
+          <input name="q5" id="q5-4" type="checkbox" value="1">
+          <label for="q5-4">4</label>
+        </div>
+
+        <div class="checked--circle">
+          <input name="q5" id="q5-5" type="checkbox" value="2" checked>
+          <label for="q5-5">5</label>
+        </div>
+
+      </div>
+
+      <div class="example__radio">
+
+        <h4>Switch theme?</h4>
+        <div class="checked--circle">
+          <input name="q6" id="q6-1" type="radio" value="1" checked>
+          <label for="q6-1"><i class="fa fa-sun"></i></label>
+        </div>
+
+        <div class="checked--circle">
+          <input name="q6" id="q6-2" type="radio" value="2">
+          <label for="q6-2"><i class="fa fa-moon"></i></label>
+        </div>
+
+      </div>
+
+      <div class="example__code">
+        <p>&lt;div class=“<span class="code">checked--circle</span>”&gt;<br />
+          <span class="indent">&lt;input name="theme" id="theme-dark" type=“<span class="code">radio</span>” value=“dark”&gt;</span><br />
+          <span class="indent">&lt;label for="theme-dark"&gt;&lt;i class="fa fa-moon"&gt;&lt;i&gt;&lt;/label&gt;</span><br />
+          &lt;/div&gt;
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Example: Tiles -->
+    <div class="example">
+
+      <div class="example__desc">
+        <h2>Tiles</h2>
+        <p>Line options up as inline boxes using <span class="code">checked--tiles</span>.</p>
+
+        <a data-toggle=""><i class="fa fa-code"></i> View example code</a>
+      </div>
+
+      <div class="example__checkbox">
+
+        <h4>Select multiple options</h4>
+        <div class="checked--tiles">
+          <input name="q7" id="q7-1" type="checkbox" value="1">
+          <label for="q7-1">Ice cream</label>
+        </div>
+
+        <div class="checked--tiles">
+          <input name="q7" id="q7-2" type="checkbox" value="2" checked>
+          <label for="q7-2">Cake</label>
+        </div>
+        <div class="checked--tiles">
+          <input name="q7" id="q7-3" type="checkbox" value="3">
+          <label for="q7-3">Chocolate</label>
+        </div>
+        <div class="checked--tiles">
+          <input name="q7" id="q7-4" type="checkbox" value="1">
+          <label for="q7-4">Ice cream</label>
+        </div>
+
+        <div class="checked--tiles">
+          <input name="q7" id="q7-5" type="checkbox" value="2" checked>
+          <label for="q7-5">Cake</label>
+        </div>
+        <div class="checked--tiles">
+          <input name="q7" id="q7-6" type="checkbox" value="3">
+          <label for="q7-6">Chocolate</label>
+        </div>
+
+      </div>
+
+      <div class="example__radio">
+
+        <h4>This is awesome?</h4>
+        <div class="checked--tiles">
+          <input name="q8" id="q8-1" type="radio" value="1" checked>
+          <label for="q8-1">Yes!</label>
+        </div>
+
+        <div class="checked--tiles">
+          <input name="q8" id="q8-2" type="radio" value="2">
+          <label for="q8-2">No</label>
+        </div>
+
+      </div>
+
+      <div class="example__code">
+        <p>&lt;div class=“<span class="code">checked--tiles</span>”&gt;<br />
+          <span class="indent">&lt;input name="awesome" id="awesomeY" type=“<span class="code">radio</span>” value=“yes”&gt;</span><br />
+          <span class="indent">&lt;label for="awesomeY"&gt;Yes!&lt;/label&gt;</span><br />
+          &lt;/div&gt;
+        </p>
+      </div>
+    </div>
+
+
+    <!-- Example: Bubbles -->
+    <div class="example">
+
+      <div class="example__desc">
+        <h2>Bubbles</h2>
+        <p>Line options up as inline boxes using <span class="code">checked--tiles</span>.</p>
+
+        <a data-toggle=""><i class="fa fa-code"></i> View example code</a>
+      </div>
+
+      <div class="example__checkbox">
+
+        <h4>Select multiple options</h4>
+
+        <div class="checked-wrapper-bubbles">
+
+          <div class="checked--bubbles">
+            <input name="q7" id="q7-1" type="checkbox" value="1">
+            <label for="q7-1">Ice cream</label>
+          </div>
+
+          <div class="checked--bubbles">
+            <input name="q7" id="q7-2" type="checkbox" value="2" checked>
+            <label for="q7-2">Cake</label>
+          </div>
+          <div class="checked--bubbles">
+            <input name="q7" id="q7-3" type="checkbox" value="3">
+            <label for="q7-3">Chocolate</label>
+          </div>
+          <div class="checked--bubbles">
+            <input name="q7" id="q7-4" type="checkbox" value="1">
+            <label for="q7-4">Ice cream</label>
+          </div>
+
+          <div class="checked--bubbles">
+            <input name="q7" id="q7-5" type="checkbox" value="2" checked>
+            <label for="q7-5">Cake</label>
+          </div>
+          <div class="checked--bubbles">
+            <input name="q7" id="q7-6" type="checkbox" value="3">
+            <label for="q7-6">Chocolate</label>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="example__radio">
+
+        <h4>This is awesome?</h4>
+        <div class="checked--bubbles">
+          <input name="q8" id="q8-1" type="radio" value="1" checked>
+          <label for="q8-1">Yes!</label>
+        </div>
+
+        <div class="checked--bubbles">
+          <input name="q8" id="q8-2" type="radio" value="2">
+          <label for="q8-2">No</label>
+        </div>
+
+      </div>
+
+      <div class="example__code">
+        <p>&lt;div class=“<span class="code">checked--tiles</span>”&gt;<br />
+          <span class="indent">&lt;input name="awesome" id="awesomeY" type=“<span class="code">radio</span>” value=“yes”&gt;</span><br />
+          <span class="indent">&lt;label for="awesomeY"&gt;Yes!&lt;/label&gt;</span><br />
+          &lt;/div&gt;
+        </p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+      
 
       <h3>Boxed checkbox</h3>
 

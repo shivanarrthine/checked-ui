@@ -1,0 +1,58 @@
+
+// classic style
+.checked--classic{
+  margin-bottom: 1rem;
+
+  input[type=checkbox], input[type=radio]{
+
+    & + label{
+      display: inline-flex;
+      align-items: center;
+    }
+
+    & + label:before{
+      content: "";
+      display: inline-flex;
+      margin-right: 0.5rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 1px solid $border-color;
+      transition: 0.3s all ease;
+    }
+
+    // checked state
+    &:checked + label:before{
+      background: $primary;
+      border-color: $primary;
+    }
+
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 0.5rem;
+      top: 50%;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow: 
+        2px 0 0 white,
+        4px 0 0 white,
+        4px -2px 0 white,
+        4px -4px 0 white,
+        4px -6px 0 white,
+        4px -8px 0 white;
+      transform: rotate(45deg);
+    }
+
+    // focused state
+    &:focus + label:before, &:hover + label:before{
+      border-color: $primary;
+    }
+  }
+
+  input[type=radio]{
+    & + label:before{
+      border-radius: 100%;
+    }
+  }
+}

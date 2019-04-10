@@ -1,0 +1,15 @@
+
+// shared styles
+.checked--classic, .checked--boxes, .checked--circle, .checked--tiles{
+
+  input[type=checkbox], input[type=radio]{
+    position: absolute;
+    opacity: 0;
+
+    & + label{
+      position: relative;
+      cursor: pointer;
+      font-weight: 500;
+    }
+  }
+}

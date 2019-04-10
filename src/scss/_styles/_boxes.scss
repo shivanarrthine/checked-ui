@@ -1,0 +1,29 @@
+
+// boxes style
+.checked--boxes{
+  display: inline-flex;
+  margin-right: 0.5rem;
+
+  input[type=checkbox], input[type=radio]{
+
+    & + label{
+      display: block;
+      border: 1px solid $border-color;
+      border-radius: 0.25rem;
+      padding: 0.75rem 1rem;
+      color: $input-color; 
+      min-width: 4rem;
+      text-align: center;
+    }
+
+    &:checked + label{
+      background: $primary;
+      border-color: $primary;
+      color: $white;
+    }
+
+    &:focus + label, &:hover + label{
+      border-color: $primary;
+    }
+  }
+}

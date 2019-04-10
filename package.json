@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --watch src/scss -o src/css"
+    "demo-build": "node-sass --watch demo/scss -o demo/css",
+    "library-build": "node-sass --watch src/scss/checked.scss src/css/checked.min.css --output-style compressed",
+    "build": "npm run demo-build & npm run library-build"
   },
   "author": "",
   "license": "ISC",

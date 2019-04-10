@@ -1,0 +1,30 @@
+
+// circles style
+.checked--circle{
+  display: inline-flex;
+  margin-right: 0.5rem;
+
+  input[type=checkbox], input[type=radio]{
+
+    & + label{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $border-color;
+      border-radius: 100%;
+      color: $input-color; 
+      width: 3rem;
+      height: 3rem;
+    }
+
+    &:checked + label{
+      background: $primary;
+      border-color: $primary;
+      color: $white;
+    }
+
+    &:focus + label, &:hover + label{
+      border-color: $primary;
+    }
+  }
+}

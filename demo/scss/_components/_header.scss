@@ -1,0 +1,23 @@
+
+header{
+  background-image: url('../images/background.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 50%;
+  height:35rem;
+  display: flex;
+  align-items: center;
+
+  .container{
+    margin-bottom: 10rem;
+  }
+
+  .logo{
+    margin-bottom: 1rem;
+  }
+
+  h4{
+    width: 40%;
+    margin-bottom: 2.5rem;
+  }
+}

@@ -1,0 +1,21 @@
+
+.button{
+  display: inline-block;
+  border: 2px solid $primary; 
+  color: $black;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  margin: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border-radius: 2rem;
+
+  &:hover{
+    transform: scale(1.05);
+  }
+
+  &--primary{
+    background: $primary;
+    color: $white;
+  }
+}
