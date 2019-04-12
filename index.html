@@ -284,33 +284,29 @@
 
         <h4>Select multiple options</h4>
 
-        <div class="checked-wrapper-bubbles">
+        <div class="wrapper-bubbles wrapper-bubbles--auto">
 
-          <div class="checked--bubbles">
-            <input name="q7" id="q7-1" type="checkbox" value="1">
-            <label for="q7-1">Ice cream</label>
-          </div>
-
-          <div class="checked--bubbles">
-            <input name="q7" id="q7-2" type="checkbox" value="2" checked>
-            <label for="q7-2">Cake</label>
-          </div>
-          <div class="checked--bubbles">
-            <input name="q7" id="q7-3" type="checkbox" value="3">
-            <label for="q7-3">Chocolate</label>
-          </div>
-          <div class="checked--bubbles">
-            <input name="q7" id="q7-4" type="checkbox" value="1">
-            <label for="q7-4">Ice cream</label>
+          <div class="checked-bubble">
+            <input name="q9" id="q9-1" type="checkbox" value="1">
+            <label for="q9-1">Ice cream</label>
           </div>
 
-          <div class="checked--bubbles">
-            <input name="q7" id="q7-5" type="checkbox" value="2" checked>
-            <label for="q7-5">Cake</label>
+          <div class="checked-bubble">
+            <input name="q9" id="q9-2" type="checkbox" value="2">
+            <label for="q9-2">Cake</label>
           </div>
-          <div class="checked--bubbles">
-            <input name="q7" id="q7-6" type="checkbox" value="3">
-            <label for="q7-6">Chocolate</label>
+          <div class="checked-bubble">
+            <input name="q9" id="q9-3" type="checkbox" value="3">
+            <label for="q9-3">Chocolate</label>
+          </div>
+          <div class="checked-bubble">
+            <input name="q9" id="q9-4" type="checkbox" value="1">
+            <label for="q9-4">Ice cream</label>
+          </div>
+
+          <div class="checked-bubble">
+            <input name="q9" id="q9-5" type="checkbox" value="2">
+            <label for="q9-5">Cake</label>
           </div>
 
         </div>
@@ -320,14 +316,19 @@
       <div class="example__radio">
 
         <h4>This is awesome?</h4>
-        <div class="checked--bubbles">
-          <input name="q8" id="q8-1" type="radio" value="1" checked>
-          <label for="q8-1">Yes!</label>
-        </div>
+        <div class="wrapper-bubbles">
 
-        <div class="checked--bubbles">
-          <input name="q8" id="q8-2" type="radio" value="2">
-          <label for="q8-2">No</label>
+          <div class="checked-bubble checked-bubble--outline ">
+            <input name="q10" id="q10-1" type="radio" value="1">
+            <label for="q10-1">Ice cream</label>
+          </div>
+
+          <div class="checked-bubble checked-bubble--outline lg">
+            <input name="q10" id="q10-2" type="radio" value="2">
+            <label for="q10-2">Cake</label>
+          </div>
+
+
         </div>
 
       </div>
@@ -342,109 +343,68 @@
     </div>
 
 
+    <!-- Example: Range -->
+    <div class="example">
 
+      <div class="example__desc">
+        <h2>Range</h2>
+        <p>Line options up as inline boxes using <span class="code">checked--circle</span>.</p>
 
-  </div>
+        <a data-toggle=""><i class="fa fa-code"></i> View example code</a>
+      </div>
 
-      
+      <div class="example__checkbox">
 
-      <h3>Boxed checkbox</h3>
+        <h4>How much effort is needed?</h4>
+        <div class="checked-range">
 
-      <form class="form">
-        <div class="checkbox checkbox--box">
-          <input id="box-1" type="checkbox" value="1">
-          <label for="box-1">Option 1</label>
+          <input name="q11" id="q11-2" type="radio" value="3">
+          <label for="q11-2">L</label>
+
+          <input name="q11" id="q11-3" type="radio" value="2" checked>
+          <label for="q11-3">M</label>
+
+          <input name="q11" id="q11-4" type="radio" value="1">
+          <label for="q11-4">S</label>
+
         </div>
 
-        <div class="checkbox checkbox--box">
-          <input id="box-2" type="checkbox" value="1">
-          <label for="box-2">Option 2</label>
+      </div>
+
+      <div class="example__radio">
+
+        <h4>How are you today?</h4>
+        <div class="checked-range checked-range--scale">
+          <input name="q12" id="q12-1" type="radio" value="5">
+          <label for="q12-1"><i class="fa fa-grin"></i></label>
+
+          <input name="q12" id="q12-2" type="radio" value="4">
+          <label for="q12-2"><i class="fa fa-smile"></i></label>
+
+          <input name="q12" id="q12-3" type="radio" value="3" checked>
+          <label for="q12-3"><i class="fa fa-meh"></i></label>
+
+          <input name="q12" id="q12-4" type="radio" value="2">
+          <label for="q12-4"><i class="fa fa-frown"></i></label>
+
+          <input name="q12" id="q12-5" type="radio" value="1">
+          <label for="q12-5"><i class="fa fa-sad-cry"></i></label>
         </div>
 
-        <div class="checkbox checkbox--box">
-          <input id="box-3" type="checkbox" value="1">
-          <label for="box-3">Option 3</label>
-        </div>
-      </form>
+      </div>
 
-      <hr />
-
-      <h3>Circle checkbox</h3>
-
-      <form class="form">
-        <div class="checkbox checkbox--circle">
-          <input id="circle-1" type="checkbox" value="1">
-          <label for="circle-1">1</label>
-        </div>
-
-        <div class="checkbox checkbox--circle">
-          <input id="circle-2" type="checkbox" value="1">
-          <label for="circle-2">3</label>
-        </div>
-
-        <div class="checkbox checkbox--circle">
-          <input id="circle-3" type="checkbox" value="1">
-          <label for="circle-3">5</label>
-        </div>
-
-        <div class="checkbox checkbox--circle">
-          <input id="circle-4" type="checkbox" value="1">
-          <label for="circle-4">7</label>
-        </div>
-
-        <div class="checkbox checkbox--circle">
-          <input id="circle-5" type="checkbox" value="1">
-          <label for="circle-5">11</label>
-        </div>
-      </form>
-
-
-      <hr />
-
-
-      <h3>Bubbles</h3>
-
-      <form class="bubble-grid bubble-grid--auto">
-        <div class="bubble">
-          <input id="bubble-1" type="checkbox" value="1">
-          <label for="bubble-1">1</label>
-        </div>
-
-        <div class="bubble">
-          <input id="bubble-2" type="checkbox" value="1">
-          <label for="bubble-2">Testing with a long label. Does it make two lines?</label>
-        </div>
-
-        <div class="bubble">
-          <input id="bubble-3" type="checkbox" value="1">
-          <label for="bubble-3">Testing with a long label. Does it make two lines?</label>
-        </div>
-
-        <div class="bubble">
-          <input id="bubble-4" type="checkbox" value="1">
-          <label for="bubble-4">4</label>
-        </div>
-
-        <div class="bubble">
-          <input id="bubble-5" type="checkbox" value="1">
-          <label for="bubble-5">5</label>
-        </div>
-
-        <div class="bubble">
-          <input id="bubble-6" type="checkbox" value="1">
-          <label for="bubble-6">6</label>
-        </div>
-
-        <div class="bubble">
-          <input id="bubble-7" type="checkbox" value="1">
-          <label for="bubble-7">7</label>
-        </div>
-
-
-      </form>
-
-
+      <div class="example__code">
+        <p>&lt;div class=“<span class="code">checked--circle</span>”&gt;<br />
+          <span class="indent">&lt;input name="theme" id="theme-dark" type=“<span class="code">radio</span>” value=“dark”&gt;</span><br />
+          <span class="indent">&lt;label for="theme-dark"&gt;&lt;i class="fa fa-moon"&gt;&lt;i&gt;&lt;/label&gt;</span><br />
+          &lt;/div&gt;
+        </p>
+      </div>
     </div>
+    
+
+
+
   </div>
 
 

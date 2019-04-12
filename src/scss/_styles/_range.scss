@@ -1,0 +1,154 @@
+
+.checked-range{
+  position: relative;
+  // direction: rtl;
+  display: inline-flex;
+  flex-direction: row-reverse;
+
+  input[type=radio]{
+
+    & + label{
+      display: inline-flex;
+      margin-right: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $border-color;
+      border-radius: 100%;
+      color: $input-color; 
+      width: 3rem;
+      height: 3rem;
+    }
+
+
+    &:checked + label, 
+    &:checked + label ~ label{
+      background: $primary;
+      border-color: $primary;
+      color: $white;
+
+      &:before{
+        content: "";
+        position: absolute;
+        top: -1px;
+        right: 1.5rem;
+        width: 3.5rem;
+        height: 3rem;
+        background: $primary;
+        z-index: -1;
+      }
+
+    }
+
+    &:checked + label ~ label{
+      color: $primary;
+    }
+
+    &:last-of-type + label{
+
+      &:before{
+        content: none !important;
+      }
+    }
+
+  }
+
+  &:not(.checked-range--scale) input[type="radio"]{
+    &:hover + label, 
+    &:hover + label ~ label{
+      background: $primary;
+      border-color: $primary;
+      color: $white;
+
+      &:before{
+        // content: "";
+        // position: absolute;
+        // top: -1px;
+        // right: 1.5rem;
+        // width: 3.5rem;
+        // height: 3rem;
+        // background: $primary;
+        // z-index: -1;
+      }
+
+    }
+
+    &:hover + label ~ label{
+      color: $primary;
+    }
+  }
+}
+
+.checked-range.checked-range--scale{
+  input[type=radio]{
+
+    // yellow
+    &:checked:nth-child(5) + label,
+    &:checked:nth-child(5) + label ~ label,
+    &:hover:nth-child(5) + label,
+    &:hover:nth-child(5) + label ~ label{
+      background: $yellow;
+      border-color: $yellow;
+      color: $white;
+
+      &:before{
+        background: $yellow;
+      }
+    }
+
+    &:checked:nth-child(5) + label ~ label,
+    &:hover:nth-child(5) + label ~ label{
+      color: $yellow;
+    }
+
+    &:checked:nth-child(7) + label,
+    &:checked:nth-child(7) + label ~ label,
+    &:hover:nth-child(7) + label,
+    &:hover:nth-child(7) + label ~ label{
+      background: $yellow;
+      border-color: $yellow;
+      color: $white;
+
+      &:before{
+        background: $yellow;
+      }
+    }
+
+    &:checked:nth-child(7) + label ~ label,
+    &:hover:nth-child(7) + label ~ label{
+      color: $yellow;
+    }
+
+    //blue
+    &:hover:nth-child(1) + label,
+    &:hover:nth-child(1) + label ~ label,
+    &:hover:nth-child(3) + label,
+    &:hover:nth-child(3) + label ~ label{
+      background: $primary;
+      border-color: $primary;
+      color: $white;
+
+      &:before{
+        background: $primary;
+      }
+    }
+
+    &:hover:nth-child(1) + label ~ label,
+    &:hover:nth-child(3) + label ~ label{
+      color: $primary;
+    }
+
+
+     // red
+    &:checked:nth-child(9) + label,
+    &:hover:nth-child(9) + label{
+      background: $red !important;
+      border-color: $red !important;
+      color: $white !important;
+
+      &:before{
+        background: $red !important;
+      }
+    }
+  }
+}
+

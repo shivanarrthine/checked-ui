@@ -7,9 +7,11 @@ header{
   height:35rem;
   display: flex;
   align-items: center;
+  animation: bg-scale 0.5s ease;
 
   .container{
     margin-bottom: 10rem;
+    animation: fade-in 2s ease;
   }
 
   .logo{

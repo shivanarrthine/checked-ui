@@ -35,6 +35,18 @@ a {
   font-weight: 600;
   cursor: pointer; }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes bg-scale {
+  0% {
+    background-size: 0%; }
+  100% {
+    background-size: 50%; } }
+
 * {
   box-sizing: border-box; }
 
@@ -56,7 +68,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+  animation: fade-in 4s ease; }
   .example__desc {
     padding-right: 5rem; }
   .example__code {
@@ -86,9 +99,11 @@ header {
   background-size: 50%;
   height: 35rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  animation: bg-scale 0.5s ease; }
   header .container {
-    margin-bottom: 10rem; }
+    margin-bottom: 10rem;
+    animation: fade-in 2s ease; }
   header .logo {
     margin-bottom: 1rem; }
   header h4 {

@@ -10,6 +10,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   margin-bottom: 10rem;
+  animation: fade-in 4s ease;
 
   &__desc{
     // grid-row: span 2;

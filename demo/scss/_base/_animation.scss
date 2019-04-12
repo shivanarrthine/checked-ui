@@ -1,0 +1,18 @@
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes bg-scale{
+  0%{
+    background-size: 0%;
+  }
+  100%{
+    background-size: 50%;
+  }
+}
