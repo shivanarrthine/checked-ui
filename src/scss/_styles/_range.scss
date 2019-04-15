@@ -17,6 +17,8 @@
       color: $input-color; 
       width: 3rem;
       height: 3rem;
+      transition: all 0.3s ease;
+
     }
 
 
@@ -35,6 +37,7 @@
         height: 3rem;
         background: $primary;
         z-index: -1;
+        transition: background 0.3s ease;
       }
 
     }
@@ -58,18 +61,6 @@
       background: $primary;
       border-color: $primary;
       color: $white;
-
-      &:before{
-        // content: "";
-        // position: absolute;
-        // top: -1px;
-        // right: 1.5rem;
-        // width: 3.5rem;
-        // height: 3rem;
-        // background: $primary;
-        // z-index: -1;
-      }
-
     }
 
     &:hover + label ~ label{
