@@ -71,8 +71,10 @@ body {
   margin-bottom: 10rem;
   animation: fade-in 4s ease; }
   .example__desc {
+    grid-row: span 2;
     padding-right: 5rem; }
   .example__code {
+    display: none;
     grid-column-start: 2;
     grid-column-end: -1;
     background: #eee;
@@ -84,6 +86,9 @@ body {
       margin: 0; }
     .example__code span.indent {
       margin-left: 1rem; }
+    .example__code span.indent--md {
+      margin-left: 2rem;
+      display: block; }
 
 @media all and (max-width: 800px) {
   .page {

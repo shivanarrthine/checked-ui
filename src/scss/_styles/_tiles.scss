@@ -1,13 +1,13 @@
 
 // tiles style
-.checked--tiles{
+.checked-tiles{
   display: inline-flex;
   margin: 0 0.5rem 0.5rem 0;
 
   input[type=checkbox], input[type=radio]{
 
     & + label{
-      display: flex;
+      display: inline-flex;
       justify-content: center;
       align-items: center;
       border: 1px solid $border-color;
@@ -16,6 +16,7 @@
       width: 6rem;
       height: 7rem;
       transition: all 0.5s ease;
+      text-align: center;
     }
 
     &:checked + label{

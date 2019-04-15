@@ -1,5 +1,5 @@
 
-.checked-range{
+.checked-rating{
   position: relative;
   // direction: rtl;
   display: inline-flex;
@@ -55,7 +55,7 @@
 
   }
 
-  &:not(.checked-range--scale) input[type="radio"]{
+  &:not(.checked-rating--scale) input[type="radio"]{
     &:hover + label, 
     &:hover + label ~ label{
       background: $primary;
@@ -69,7 +69,7 @@
   }
 }
 
-.checked-range.checked-range--scale{
+.checked-rating.checked-rating--scale{
   input[type=radio]{
 
     // yellow

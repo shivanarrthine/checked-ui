@@ -13,11 +13,12 @@
   animation: fade-in 4s ease;
 
   &__desc{
-    // grid-row: span 2;
+    grid-row: span 2;
     padding-right: 5rem;
   }
 
   &__code{
+    display: none;
     grid-column-start: 2;
     grid-column-end: -1;
     background: $very-light-gray;
@@ -32,6 +33,11 @@
 
     span.indent{
       margin-left: 1rem;
+    }
+
+    span.indent--md{
+      margin-left: 2rem;
+      display: block;
     }
   }
 }
